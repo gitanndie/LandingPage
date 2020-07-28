@@ -10,8 +10,7 @@ header {
 
 #masproductos {
     display: flex;
-    margin: 80px;
-    padding: 80px;
+    justify-content: center;
 }
 
 #form {
@@ -27,6 +26,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 #sec-productos {
@@ -43,26 +43,13 @@ header {
     border: 1px solid #000;
     border-radius: 3px;
 }
-
-.productos>.level {
+.productos .level {
     background-color: #ddd;
     color: black;
     padding: 15px 0;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
-}
-
-.productos>h2 {
-    margin-top: 15px;
-}
-
-.productos>ol {
-    margin: 15px 0;
-}
-
-.productos>ol>li {
-    padding: 5px 0;
 }
 
 .productos button {
@@ -78,6 +65,9 @@ header {
 }
 
 @media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
     #sec-productos {
         flex-direction: column;
     }
@@ -88,8 +78,13 @@ header {
         margin: 0 auto;
         margin-bottom: 10px;
     }
+    #masproductos {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
 }
-
 
 footer {
     margin-top: 30px;
