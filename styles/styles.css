@@ -1,0 +1,102 @@
+header {
+    background-color: rgb(19, 18, 17);
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#title {
+    display: flex;
+    margin: 40px;
+    text-align: center;
+}
+
+#form {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#sec-productos {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sec-productos {
+    margin-bottom: 80px;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.productos>.level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.productos>h2 {
+    margin-top: 15px;
+}
+
+.productos>ol {
+    margin: 15px 0;
+}
+
+.productos>ol>li {
+    padding: 5px 0;
+}
+
+.productos button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #e4e0cf;
+    font-weight: 400;
+}
+
+.productos button:hover {
+    background-color: rgb(201, 81, 121);
+    transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+    #sec-productos {
+        flex-direction: column;
+    }
+
+    .productos {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+footer {
+    margin-top: 30px;
+    background-color: rgb(237, 241, 245);
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    color: grey;
+}
